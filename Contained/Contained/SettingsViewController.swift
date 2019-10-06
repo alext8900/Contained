@@ -17,7 +17,10 @@ class SettingsViewController: UIViewController {
         Settings.shared.shouldRoll = sender.isOn
         
     }
-        override func viewDidLoad() {
+    @IBAction func madCrab(_ sender: UISwitch) {
+        Settings.shared.changeCrab = sender.isOn
+    }
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

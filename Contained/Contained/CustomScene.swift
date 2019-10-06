@@ -42,5 +42,10 @@ class CustomScene: SKScene {
         if Settings.shared.shouldRoll {
             crab.run(rollAction)
         }
+        switch Settings.shared.changeCrab {
+        case false: crab.loadTextures(named: "HappyCrab", forKey: SKSpriteNode.textureKey)
+        case true: crab.loadTextures(named: "WaitingCrab", forKey: SKSpriteNode.textureKey)
+            
+        }
     }
 }

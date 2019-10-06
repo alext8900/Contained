@@ -16,19 +16,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-f4-IQF">
-                                <rect key="frame" x="156.5" y="413" width="101.5" height="70"/>
+                                <rect key="frame" x="143.5" y="393.5" width="127.5" height="109"/>
                                 <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qlf-rt-7kZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="31"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="bmx-BW-nU2">
+                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MadCrab" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2i-o7-9jX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-82-LqG">
+                                                <rect key="frame" x="78.5" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="madCrab:" destination="RhA-T7-XGD" eventType="valueChanged" id="Zxo-V7-YX7"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-ZN-OVo">
-                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="39" width="127.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-t0-ofw">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7Ie-iC-hr3">
-                                                <rect key="frame" x="52.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="78.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="toggleRoll:" destination="RhA-T7-XGD" eventType="valueChanged" id="b0f-Ik-cHS"/>
                                                 </connections>
@@ -36,16 +58,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0kE-jX-WLV">
-                                        <rect key="frame" x="0.0" y="39" width="101.5" height="31"/>
+                                        <rect key="frame" x="0.0" y="78" width="127.5" height="31"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zoom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQz-QT-fDZ">
-                                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="31"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="GDU-Ju-dnH">
-                                                <rect key="frame" x="52.5" y="0.0" width="51" height="31"/>
+                                                <rect key="frame" x="78.5" y="0.0" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="toggleZoom:" destination="RhA-T7-XGD" eventType="valueChanged" id="QRw-w2-vAe"/>
                                                 </connections>
